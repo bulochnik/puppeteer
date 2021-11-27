@@ -1,0 +1,15 @@
+# PRODUCTION
+version: '3'
+
+services:
+  api:
+    build: ./
+    restart: always
+    ports:
+      - 4001:4001
+    volumes:
+      - /home/app/node_modules
+      - './:/home/app'
+    env_file:
+      - ./.env
+    command: 'npm start'

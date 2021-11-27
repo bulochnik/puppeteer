@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const { server } = require('./index')
 
-const SERVER_PORT = process.env.SERVER_PORT
+const SERVER_PORT = process.env.PORT
 const SERVER_URL = process.env.SERVER_URL
 
 const start = async () => {

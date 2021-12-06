@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer')
 
-const PEPPETEER_DEFAULT_MARGIN = { top: 60, right: 36, bottom: 60, left: 36 }
+const PEPPETEER_DEFAULT_MARGIN = { top: 36, right: 36, bottom: 20, left: 36 }
 
 class PuppeteerService {
   async puppeteer(link) {
